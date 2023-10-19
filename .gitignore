@@ -1,6 +1,7 @@
 initial_decision_html
 initial_statement_html
 mutation_report_html
-test_suit
+test_suit/*.html
+*.pyc
 .coverage
 *.log
