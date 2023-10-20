@@ -19,9 +19,10 @@ class test_decisionCoverage(unittest.TestCase):
                          is_3=((5, 3, 3), Triangle.Type.ISOSCELES),
                          in_1=((1, 2, 5), Triangle.Type.INVALID),
                          )
-        for value in triangles.items():
+
+        for value in triangles.values():
             triangle, expected = value
-            actual = Triangle.classify(triangle)
+            actual = Triangle.classify(*triangle)
             self.assertEqual(actual, expected)
 
 
