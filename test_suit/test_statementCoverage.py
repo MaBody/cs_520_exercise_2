@@ -3,7 +3,7 @@ from isTriangle import Triangle
 
 
 class test_statementCoverage(unittest.TestCase):
-    def statement_tests(self):
+    def test3(self):
         triangles = dict(eq_1=((2, 2, 2), Triangle.Type.EQUILATERAL),
                          sc_1=((2, 3, 4), Triangle.Type.SCALENE),
                          is_1=((3, 3, 5), Triangle.Type.ISOSCELES),
